@@ -505,10 +505,6 @@ a {
   margin-bottom: 65px;
 }
 
-.pizza-block__image {
-  height: 260px;
-}
-
 @media (max-width: 390px) {
   .pizza-block {
     width: 230px;
@@ -528,7 +524,9 @@ a {
 }
 
 .pizza-block__image {
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
+  height: 260px;
 }
 .pizza-block__title {
   font-size: 20px;
@@ -744,10 +742,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 15px;
-  width: 10%;
-}
-.cart__item-img img {
-  width: 80px;
 }
 .cart__item-info {
   margin: 0 10px;
@@ -764,7 +758,7 @@ body {
   width: 40%;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .cart__item {
     flex-direction: column;
     align-items: center;
