@@ -17,6 +17,16 @@ body {
   background-color: #ffdf8c;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #fe5f1e;
+  border-radius: 15px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
