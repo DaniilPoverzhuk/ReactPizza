@@ -1,0 +1,35 @@
+@mixin listItem {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 9%);
+  padding: 10px 0;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.list {
+  list-style-type: none;
+
+  &Item {
+    @include listItem;
+    transition: 0.4s;
+
+    &:hover {
+      background: rgba(254, 95, 30, 0.1);
+      color: #fe5f1e;
+    }
+
+    &Active {
+      @include listItem;
+
+      background: rgba(254, 95, 30, 0.1);
+      color: #fe5f1e;
+    }
+  }
+}

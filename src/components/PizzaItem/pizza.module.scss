@@ -1,0 +1,150 @@
+.root {
+  margin-bottom: 65px;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto 80px;
+}
+
+.image {
+  height: 260px;
+  width: 260px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1%;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.choices {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+
+  ul {
+    display: flex;
+    &:first-child {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.type {
+  li {
+    cursor: pointer;
+    flex: 1 1;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+.disabledType {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 4%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.activeType {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 4%);
+  cursor: auto;
+}
+
+.sizes {
+  li {
+    cursor: pointer;
+    flex: 1 1;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px;
+    user-select: none;
+  }
+}
+
+.activeSize {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 4%);
+  cursor: auto;
+}
+
+.disabledSize {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 4%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 27px;
+}
+
+.button {
+  display: flex !important;
+  align-items: center;
+  gap: 7px;
+
+  background: none;
+
+  border: 1px solid #fe5f1e;
+  color: #fe5f1e;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 100px;
+  padding: 10px 20px;
+
+  svg path {
+    fill: #fe5f1e;
+  }
+
+  transition: 0.4s;
+
+  &:hover {
+    background: #fe5f1e;
+    color: #fff;
+
+    svg path {
+      fill: #fff;
+    }
+
+    .amountGoods {
+      color: #fe5f1e;
+      background: #fff;
+    }
+  }
+}
+
+.amountGoods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  background: #fe5f1e;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.4s;
+}

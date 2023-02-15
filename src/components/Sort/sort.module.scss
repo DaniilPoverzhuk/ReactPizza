@@ -1,0 +1,39 @@
+.inner {
+  display: flex;
+  position: relative;
+}
+
+.icon {
+  margin-right: 5px;
+  transform: rotate(-180deg);
+
+  &Active {
+    margin-right: 5px;
+  }
+}
+
+.label {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.text {
+  font-weight: 700;
+}
+
+.selectedItem {
+  margin-left: 7px;
+  border-bottom: 1px dashed;
+  color: #fe5f1e;
+}
+
+@media (max-width: 430px) {
+  .label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}

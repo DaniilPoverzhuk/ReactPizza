@@ -1,0 +1,105 @@
+@mixin button($color, $colorHover, $bgHover) {
+  border: 2px solid $color;
+  background: #fff;
+  border-radius: 100%;
+
+  color: $color;
+  font-weight: bold;
+
+  padding: 8px;
+  min-width: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.4s;
+
+  &:hover {
+    background: $bgHover;
+    color: $colorHover;
+  }
+}
+
+.root {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: 55px;
+  }
+}
+
+img {
+  width: 80px;
+  height: 80px;
+
+  margin-right: 20px;
+}
+
+.info {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 27px;
+}
+
+.type {
+  color: #8d8d8d;
+  font-size: 18px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-grow: 2;
+
+  button {
+    @include button(#fe5f1e, #fff, #fe5f1e);
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.btnDelete {
+  @include button(#ddd, #fff, #000);
+}
+
+@media (max-width: 620px) {
+  .root {
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+      margin-right: 0;
+    }
+
+    div {
+      margin-right: 0;
+    }
+  }
+
+  .info {
+    align-items: center;
+  }
+}

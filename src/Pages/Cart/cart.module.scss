@@ -1,0 +1,36 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 32px;
+}
+
+.btnClear {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+
+  color: #b6b6b6;
+  transition: 0.4s;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover {
+    color: #232323;
+  }
+}
+
+.listItem {
+  margin-top: 30px;
+}
