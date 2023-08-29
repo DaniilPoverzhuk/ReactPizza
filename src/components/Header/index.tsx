@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         <Link to="/" className={style.logo}>
           <img src={logo} alt="logo" />
           <div className={style.logoText}>
-            <h1 className={style.logoTextUp}>react pizza v2</h1>
+            <h1 className={style.logoTextUp}>react pizza</h1>
             <p className={style.logoTextDown}>
               самая вкусная пицца во вселенной
             </p>
